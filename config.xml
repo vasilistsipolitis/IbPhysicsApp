@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.physicsib"
+        versionCode = "2" 
+        version     = "2.1.0">
+
+    <name>IB Physics Definitions</name>
+
+    <description>
+        An application that aims to help IB students to be fully prepared for the final exams and in-class tests by providing detailed definitions for each different topic of the official syllabus.
+    </description>
+
+    <author email="billtsipolit@gmail.com">
+        Vasileios Tsipolitis
+    </author>
+
+    <content src="index.html" />
+    <access origin="*"/> 
+
+  <preference name="orientation" value="portrait" />
+  <preference name="fullscreen" value="false" />
+  <preference name="KeepRunning" value="false"/>
+  <preference name="android-build-tool" value="gradle" /> 
+  <preference name="android-minSdkVersion" value="16" />
+  <preference name="android-targetSdkVersion" value="26" />
+
+
+<platform name="android">
+  <icon src="icon.png" width="180" height="180" />
+</platform>
+
+</widget>

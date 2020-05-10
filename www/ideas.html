@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="not yet developed">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script> 
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: auto;
+  margin: auto;
+  background-color: #555;
+  height: auto;
+  color: white;
+  border-radius: 10px;
+  padding-bottom: 20px; 
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="home.html" class="active">IB Physics</a>
+  <div id="myLinks">
+    <a href="syllabus.html">Syllabus</a>
+    <a href="index.html">Notes</a>
+    <a href="booklet.html">Booklets</a>
+    <a href="ideas.html">IA/EE/TOK Ideas</a>
+    <a href="books.html">Books</a>
+    <a href="videos.html">Videos</a>
+    <a href="calc.html">Calculator</a>
+    <a href="about.html">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Ideas</h3>
+  <h4><b>IA Idea 1</b></h4>
+  <p><b>Investigate factors that affect the flight of an elastic band</b></p>
+  <p>You could interpret this investigation in many ways. Firstly, you should decide what the dependent variable means to you in this.</p>
+  <p>Personally, I would look at the the range of the elastic band. This is easily measured and there are loads of independent variables that will be measurable too.</p>
+  <p><u>Dependent Variable:</u> Range</p>
+  <p>With this is mind, there are lots of independent variables that can be investigated:</p>
+  <p><u>Possible Independent Variables:</u></p>
+  <ul>
+    <li>Temperature of elastic band</li>
+    <li>Angle of launch</li>
+    <li>Length of elastic band</li>
+    <li>Width of elastic band</li>
+    <li>Thickness of elastic band</li>
+    <li>Strain of the elastic band upon launch</li>
+  </ul>
+  <p>The list is endless.</p>
+  <p>This also means that the control variables should be carefully addressed in this investigation – making it an excellent project for differentiation of abilities.</p>
+  <br>
+  <p>Source: https://physics.guzled.com/updated-16-ideas-for-ib-physics-ia-investigations/</p>
+  <style>
+.buttonnow {
+  border-radius: 4px;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonnow span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonnow span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonnow:hover span {
+  padding-right: 25px;
+}
+
+.buttonnow:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>

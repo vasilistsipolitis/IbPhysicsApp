@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="not yet developed">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script> 
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: auto;
+  margin: auto;
+  background-color: #555;
+  height: auto;
+  color: white;
+  border-radius: 10px;
+  padding-bottom: 20px; 
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="home.html" class="active">IB Physics</a>
+  <div id="myLinks">
+    <a href="syllabus.html">Syllabus</a>
+    <a href="index.html">Notes</a>
+    <a href="booklet.html">Booklets</a>
+    <a href="ideas.html">IA/EE/TOK Ideas</a>
+    <a href="books.html">Books</a>
+    <a href="videos.html">Videos</a>
+    <a href="calc.html">Calculator</a>
+    <a href="about.html">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+
+<button type="button" onclick="window.location.href = 'syllabus.html';" class="block"><i class="material-icons">book</i><br><b>Syllabus</b></button>
+<button type="button" onclick="window.location.href = 'notes.html';" class="block"><i class="material-icons">note</i><br><b>Notes</b></button>
+<button type="button" onclick="window.location.href = 'booklet.html';" class="block"><i class="material-icons">assignment</i><br><b>Booklets</b></button>
+<button type="button" onclick="window.location.href = 'ideas.html';" class="block"><i class="material-icons">cloud</i><br><b>Ideas</b></button>
+<button type="button" onclick="window.location.href = 'books.html';" class="block"><i class="material-icons">shop</i><br><b>Books</b></button>
+<button type="button" onclick="window.location.href = 'videos.html';" class="block"><i class="material-icons">computer</i><br><b>Videos</b></button>
+<button type="button" onclick="window.location.href = 'calc.html';" class="block"><i class="material-icons">functions</i><br><b>Calculator</b></button>
+<button type="button" onclick="window.location.href = 'about.html';" class="block"><i class="material-icons">face</i><br><b>About</b></button>
+<button type="button" class="block" id="myBtn"><i class="material-icons">help</i><br><b>Help</b></button>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>In case of any technical problem or a suggestion for improvement,<br>please send an email to the address below to contact us!</p>
+    <p><b>billtsipolit@gmail.com</b></p>
+  </div>
+</div>
+
+<style>
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #333;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 10px;
+  border: 4px solid #4CAF50;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.block {
+  display: inline-block;
+  width: 30%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 40px 20px;
+  margin: 5px 5px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+} 
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
